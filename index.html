@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Software developer portfolio showcasing projects, technical skills, and experience."
+  >
+
+  <title>Developer Portfolio | Muhammad Nabil Bin Muhammad Fauzi</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">Portfolio<span>.</span></a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-contact">Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">
+          SOFTWARE DEVELOPMENT <span>·</span> BRUNEI
+        </p>
+
+        <h1>
+          Building useful solutions
+          <span>through code.</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm a Computing graduate specialising in Software Development, with hands-on experience building workflow automation 
+          systems and Python-based computer vision prototypes. I enjoy creating practical, user-focused software that solves 
+          real-world problems.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">
+            Explore my work <span aria-hidden="true">↘</span>
+          </a>
+
+          <a href="assets/NabilCV.pdf" class="button button-secondary" download="NabilCV.pdf">
+            Download CV <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span class="status-dot"></span>
+          Open to software development opportunities
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Professional summary">
+        <div class="profile-mark">NF.</div>
+
+        <p class="card-label">A LITTLE ABOUT MY WORK</p>
+        <h2>From ideas to practical solutions.</h2>
+
+        <p>
+          Interested in developing user-friendly interfaces,
+          reliable application logic, and useful software systems.
+        </p>
+
+        <div class="card-divider"></div>
+
+        <div class="focus-row">
+          <span>01</span>
+          <span>Web & application development</span>
+        </div>
+
+        <div class="focus-row">
+          <span>02</span>
+          <span>Workflow automation</span>
+        </div>
+
+        <div class="focus-row">
+          <span>03</span>
+          <span>Python & computer vision</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section class="section section-muted" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2 class="section-title">
+            A developer who enjoys solving problems.
+          </h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            I'm a Computing graduate with a background in Software
+            Development. During my internship at SHENA, I worked on
+            an inventory management solution designed to improve
+            request handling, approval workflows, and stock tracking.
+          </p>
+
+          <p>
+            I'm continuing to develop my skills in web development,
+            software engineering, and application design. I'm
+            particularly interested in building applications that
+            are practical, maintainable, and easy to use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / SELECTED WORK</p>
+          <h2 class="section-title">Projects I've worked on.</h2>
+        </div>
+
+        <p class="section-intro">
+          A selection of projects that demonstrate my
+          problem-solving and technical experience.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Project 1: Inventory Management System -->
+        <article class="project-card">
+          <div class="project-visual inventory-visual">
+            <span class="visual-label">01 — BUSINESS AUTOMATION</span>
+
+            
+        <div class="project-visual inventory-visual">
+          <img
+             class="project-screenshot"
+             src="assets/ivs.png"
+             alt="Screenshot of the inventory management and item request interface"
+             loading="lazy"
+              />
+        </div>
+
+
+          <div class="project-body">
+            <p class="project-type">INTERNSHIP PROJECT</p>
+            <h3>Inventory Management System</h3>
+
+            <p>
+              A digital inventory request system with approval
+              workflows, stock validation, inventory deduction,
+              and automated low-stock and expiry notifications.
+            </p>
+
+            <ul class="tag-list" aria-label="Technologies used">
+              <li>Power Apps</li>
+              <li>SharePoint</li>
+              <li>Power Automate</li>
+            </ul>
+
+            <p class="project-note">
+              Organisational project · No public demo
+            </p>
+
+            
+          <div class="project-links">
+            <a href="project-inventory.html">
+               View Project Details &rarr;
+            </a>
+        </div>
+
+          </div>
+        </article>
+
+
+        <!-- Project 2: Illegal U-turn Detector -->
+        <article class="project-card">
+        <div class="project-visual code-visual">
+            <span class="visual-label">02 — COMPUTER VISION</span>
+
+            <div class="code-window">
+            <div class="code-window-bar">
+                <span></span><span></span><span></span>
+                <p>plate_detection.py</p>
+            </div>
+
+            <div class="code-lines" aria-hidden="true">
+                <p><span>01</span> import cv2</p>
+                <p><span>02</span> import pytesseract</p>
+                <p><span>03</span></p>
+             <p><span>04</span> # Process vehicle images</p>
+                <p><span>05</span> # Detect license plates</p>
+             <p><span>06</span> # Extract plate text</p>
+            </div>
+            </div>
+         </div>
+
+        <div class="project-body">
+         <p class="project-type">
+             ACADEMIC GROUP PROJECT · 2021
+            </p>
+
+         <h3>Illegal U-turn Detector</h3>
+
+            <p>
+            A traffic-monitoring project designed to explore the
+            detection of illegal U-turns and the recognition of
+            vehicle license plates.
+            </p>
+
+            <p>
+            I co-developed the Python-based license-plate
+            detection and recognition component using OpenCV
+            for image processing and Tesseract OCR for text
+            extraction. The wider proposed system included
+            Raspberry Pi-based roadside hardware and a web
+            platform for managing violation records and reports.
+            </p>
+
+         <ul class="tag-list" aria-label="Technologies used">
+             <li>Python</li>
+              <li>OpenCV</li>
+              <li>Tesseract OCR</li>
+              <li>Computer Vision</li>
+            </ul>
+
+         <p class="project-note">
+              My contribution: License-plate detection and OCR
+            </p>
+
+        <div class="project-links">
+            <a href="project-uturn.html">
+               View Project Details &rarr;
+            </a>
+        </div>
+
+
+        </div>
+        </article>
+
+
+        <!-- Project 3: TrainOS AI -->
+        <article class="project-card">
+          <div class="project-visual trainos-visual">
+            <span class="visual-label">03 — MACHINE LEARNING</span>
+
+            <div class="trainos-preview">
+              <div class="trainos-preview-header">
+                <span class="trainos-preview-dot"></span>
+                <span>TRAINOS AI</span>
+              </div>
+
+              <div class="trainos-preview-content">
+                <p class="trainos-preview-label">
+                  YOUR WORKOUT GOAL
+                </p>
+
+                <div class="trainos-goal">
+                  <span class="trainos-goal-icon">✦</span>
+                  <div>
+                    <strong>Personalized</strong>
+                    <p>Workout recommendations</p>
+                  </div>
+                </div>
+
+                <div class="trainos-preview-stats">
+                  <div>
+                    <span>01</span>
+                    <p>Strength</p>
+                  </div>
+                  <div>
+                    <span>02</span>
+                    <p>Endurance</p>
+                  </div>
+                  <div>
+                    <span>03</span>
+                    <p>Flexible</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <p class="project-type">MOBILE APP · AI INTEGRATION</p>
+            <h3>TrainOS AI — Fitness Superapp</h3>
+
+            <p>
+              A fitness mobile application built with React Native
+              and Expo, featuring a TensorFlow-based model that
+              predicts workout goals using average calorie intake
+              and preferred workout type.
+            </p>
+
+            <p>
+              Integrated the prediction workflow through a Flask
+              REST API and developed a nutrition tracker with
+              create, read, update, and delete functionality.
+            </p>
+
+            <ul class="tag-list" aria-label="Technologies used">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Python</li>
+              <li>TensorFlow</li>
+              <li>Flask</li>
+            </ul>
+            
+              <div class="project-links">
+                <a href="project-trainos.html">
+                   View Project Details &rarr;
+                </a>
+              </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/frontiermarch/TrainOS_ML"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ML Repository ↗
+              </a>
+
+              <a
+                href="https://github.com/frontiermarch/TrainOS_ML_backend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Backend Repository ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <p class="eyebrow">03 / TECHNICAL SKILLS</p>
+        <h2 class="section-title">Tools I work with.</h2>
+
+        <p class="section-intro skills-intro">
+          Technologies and tools I've used in projects or
+          am developing experience with.
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-number">01</span>
+            <h3>Programming</h3>
+            <p>Python, JavaScript, HTML, CSS</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">02</span>
+            <h3>Platforms & Automation</h3>
+            <p>Power Apps, SharePoint, Power Automate</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">03</span>
+            <h3>Development Tools</h3>
+            <p>Git, GitHub, Visual Studio Code</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">04</span>
+            <h3>Areas of Interest</h3>
+            <p>Web development, APIs, databases, software design</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   
+
+<!-- Background -->
+<section class="section container" id="education">
+  <p class="eyebrow">04 / BACKGROUND</p>
+  <h2 class="section-title">Education & experience.</h2>
+
+  <!-- Professional Experience -->
+  <div class="background-group">
+    <h3 class="background-heading">Professional Experience</h3>
+
+    <div class="timeline">
+
+      <!-- SHENA -->
+      <article class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div>
+          <p class="timeline-date">JAN 2026 — JUN 2026</p>
+          <h3>IT Intern · SHENA</h3>
+          <p>
+            Designed, developed, and deployed a Microsoft
+            Power Platform inventory management system to
+            digitise inventory requests, automate approvals,
+            and improve stock tracking.
+          </p>
+          <p>
+            Implemented stock validation, automated inventory
+            deduction, low-stock and expiry notifications,
+            and workflow safeguards. Also handled testing,
+            documentation, tenant migration, system handover,
+            and enterprise IT support.
+          </p>
+          <p class="timeline-skills">
+            Power Apps · SharePoint · Power Automate · Microsoft 365
+          </p>
+        </div>
+      </article>
+
+      <!-- JAPEM -->
+      <article class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div>
+          <p class="timeline-date">NOV 2022 — JUN 2023</p>
+          <h3>Social Worker · JAPEM</h3>
+          <p>
+            Managed client cases, conducted needs assessments,
+            and connected individuals with relevant financial,
+            housing, and healthcare assistance. Maintained
+            accurate case records in accordance with
+            organisational standards.
+          </p>
+        </div>
+      </article>
+
+      <!-- Qafa Haus -->
+      <article class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div>
+          <p class="timeline-date">JAN 2022 — JUN 2022</p>
+          <h3>Content Producer · Qafa Haus</h3>
+          <p>
+            Produced promotional videos and social media
+            content, contributing to planning, filming,
+            post-production editing, and live event coverage.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="background-group">
+    <h3 class="background-heading">Education</h3>
+
+    <div class="timeline">
+
+      <!-- UTB -->
+      <article class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div>
+          <p class="timeline-date">AUG 2026</p>
+          <h3>BSc (Hons) in Computing</h3>
+          <p>Universiti Teknologi Brunei</p>
+          <p>
+            Major in Software Development · Upper Second Class Honours
+          </p>
+        </div>
+      </article>
+
+      <!-- Politeknik Brunei -->
+      <article class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div>
+          <p class="timeline-date">JUN 2022</p>
+          <h3>Higher National Diploma in Web Development</h3>
+          <p>Politeknik Brunei</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-content">
+        <p class="eyebrow">05 / GET IN TOUCH</p>
+        <h2>Let's build something useful.</h2>
+
+        <p>
+          I'm interested in software development opportunities
+          where I can contribute, learn, and grow as a developer.
+        </p>
+
+        <!-- Replace the email address with your own. -->
+        <a
+          class="button button-primary"
+          href="mailto:frontiermarch@gmail.com"
+        >
+          Email me <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="social-links">
+          <!-- Replace these URLs with your own profiles. -->
+          <a href="https://github.com/frontiermarch" target="_blank"
+             rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/md-nabil-md-fauzi-a9b66822a/" target="_blank"
+             rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="current-year"></span> Muhammad Nabil Bin Muhammad Fauzi</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="A Microsoft Power Platform inventory management solution developed during an IT internship, featuring digital requests, approval workflows, stock validation, and automated inventory alerts."
+  >
+
+  <title>Inventory Management System | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-details.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Portfolio.</a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-detail-hero">
+      <div class="container">
+
+        <a class="back-link" href="index.html#projects">
+          &larr; Back to projects
+        </a>
+
+        <p class="eyebrow">PROJECT 01 / BUSINESS AUTOMATION</p>
+
+        <h1>Inventory Management System</h1>
+
+        <p class="project-detail-intro">
+          Digitising inventory requests, streamlining approval
+          workflows, and improving stock tracking through
+          Microsoft Power Platform.
+        </p>
+
+        <div class="project-meta">
+          <div>
+            <span>ROLE</span>
+            <strong>IT Intern</strong>
+          </div>
+
+          <div>
+            <span>ORGANISATION</span>
+            <strong>SHENA</strong>
+          </div>
+
+          <div>
+            <span>DURATION</span>
+            <strong>Jan – Jun 2026</strong>
+          </div>
+        </div>
+
+        <ul class="tag-list project-detail-tags">
+          <li>Power Apps</li>
+          <li>SharePoint</li>
+          <li>Power Automate</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="section container project-detail-section">
+      <div class="project-section-heading">
+        <p class="eyebrow">01 / OVERVIEW</p>
+        <h2 class="section-title">From manual processes to automation.</h2>
+      </div>
+
+      <div class="project-overview-grid">
+        <div>
+          <h3>The challenge</h3>
+          <p>
+            Inventory requests and stock tracking relied on
+            paper-based forms and spreadsheet records. This
+            created opportunities for manual errors and made
+            the request and approval process harder to track.
+          </p>
+        </div>
+
+        <div>
+          <h3>The solution</h3>
+          <p>
+            I developed a digital inventory request solution
+            using Microsoft Power Platform. It brought request
+            submission, approval routing, stock validation,
+            inventory updates, and automated notifications
+            into a connected workflow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interface Showcase -->
+    <section class="section project-showcase-section">
+      <div class="container">
+        <div class="project-section-heading">
+          <p class="eyebrow">02 / USER INTERFACE</p>
+          <h2 class="section-title">A simpler way to request inventory.</h2>
+          <p>
+            The Power Apps interface allows users to select
+            inventory items, specify quantities, and submit
+            requests through a digital form.
+          </p>
+        </div>
+
+        <figure class="project-screenshot-frame">
+          <img
+            src="assets/ivs.png"
+            alt="Earlier version of the inventory management system interface"
+            loading="lazy"
+          >
+          <figcaption>
+            Interface screenshot from an earlier development version.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="section container project-detail-section">
+      <div class="project-section-heading">
+        <p class="eyebrow">03 / SYSTEM ARCHITECTURE</p>
+        <h2 class="section-title">How the system works.</h2>
+        <p>
+          The solution uses three Microsoft Power Platform
+          components to connect the user interface, data storage,
+          and automated business processes.
+        </p>
+      </div>
+
+      <div class="architecture-flow">
+
+        <article class="architecture-card">
+          <span class="architecture-number">01</span>
+          <h3>Power Apps</h3>
+          <p>
+            Provides the digital request form, item selection,
+            quantity input, and client-side stock validation.
+          </p>
+          <span class="architecture-role">USER INTERFACE</span>
+        </article>
+
+        <div class="architecture-connector" aria-hidden="true">
+          &rarr;
+        </div>
+
+        <article class="architecture-card">
+          <span class="architecture-number">02</span>
+          <h3>SharePoint</h3>
+          <p>
+            Stores inventory records, submitted requests,
+            requested items, and approval-related information.
+          </p>
+          <span class="architecture-role">DATA LAYER</span>
+        </article>
+
+        <div class="architecture-connector" aria-hidden="true">
+          &rarr;
+        </div>
+
+        <article class="architecture-card">
+          <span class="architecture-number">03</span>
+          <h3>Power Automate</h3>
+          <p>
+            Handles approval routing, final stock checks,
+            inventory updates, and automated notifications.
+          </p>
+          <span class="architecture-role">WORKFLOW AUTOMATION</span>
+        </article>
+
+      </div>
+
+      <p class="architecture-note">
+        Conceptual overview of the main components, not a
+        complete deployment diagram.
+      </p>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section project-showcase-section">
+      <div class="container">
+        <div class="project-section-heading">
+          <p class="eyebrow">04 / KEY FEATURES</p>
+          <h2 class="section-title">Beyond a digital request form.</h2>
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+            <h3>Digital inventory requests</h3>
+            <p>
+              Users select categories and available items,
+              enter quantities, and submit requests through
+              a structured form.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+            <h3>Multi-stage approvals</h3>
+            <p>
+              Automated routing coordinates the required
+              approval stages and records request status
+              and approval information.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+            <h3>Stock validation</h3>
+            <p>
+              Quantity checks help prevent requests from
+              exceeding available stock. The approval workflow
+              rechecks availability before deducting inventory.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">04</span>
+            <h3>Automated inventory alerts</h3>
+            <p>
+              Scheduled workflows notify relevant recipients
+              about low-stock items and approaching expiry dates.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Challenges -->
+    <section class="section container project-detail-section">
+      <div class="project-section-heading">
+        <p class="eyebrow">05 / TECHNICAL WORK</p>
+        <h2 class="section-title">Engineering beyond the interface.</h2>
+      </div>
+
+      <div class="technical-list">
+
+        <article>
+          <h3>Reliable stock updates</h3>
+          <p>
+            Implemented a final availability check within the
+            approval workflow before inventory deduction,
+            helping address cases where stock may change
+            while a request is awaiting approval.
+          </p>
+        </article>
+
+        <article>
+          <h3>Workflow and data integration</h3>
+          <p>
+            Connected Power Apps, SharePoint, and Power Automate
+            so that submitted requests, approval stages, and
+            inventory records work together.
+          </p>
+        </article>
+
+        <article>
+          <h3>Deployment and handover</h3>
+          <p>
+            Migrated the solution from the development tenant
+            to the organisation's environment, tested workflows,
+            prepared user documentation, and supported the
+            system handover.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contribution -->
+    <section class="section project-contribution-section">
+      <div class="container">
+        <p class="eyebrow">06 / MY CONTRIBUTION</p>
+        <h2 class="section-title">Designed, built, and handed over.</h2>
+
+        <p class="contribution-description">
+          My responsibilities covered application development,
+          workflow automation, data integration, validation,
+          testing, documentation, migration, and handover.
+          I also provided IT support during my internship and
+          presented the solution to organisational stakeholders.
+        </p>
+
+        <div class="project-detail-actions">
+          <a class="btn btn-primary" href="index.html#projects">
+            Back to all projects
+          </a>
+          <a class="btn btn-secondary" href="index.html#contact">
+            Get in touch
+          </a>
+        </div>
+
+        <p class="project-disclaimer">
+          Developed during an internship. This page describes
+          the project at a high level; no public system demo
+          or access to internal organisational data is provided.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Portfolio. Built with HTML, CSS & JavaScript.</p>
+      <a href="#">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+
+/* ========================================
+   Project Detail Pages
+======================================== */
+
+.project-detail-hero {
+  padding: 64px 0 72px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 42px;
+  color: var(--color-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: var(--color-primary);
+}
+
+.project-detail-hero .eyebrow,
+.project-section-heading .eyebrow,
+.project-contribution-section .eyebrow {
+  margin-bottom: 14px;
+}
+
+.project-detail-hero h1 {
+  max-width: 850px;
+  margin-bottom: 20px;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.project-detail-intro {
+  max-width: 720px;
+  color: var(--color-muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 64px;
+  margin-top: 36px;
+}
+
+.project-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.project-meta span,
+.architecture-role {
+  color: var(--color-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.project-meta strong {
+  font-size: 14px;
+}
+
+.project-detail-tags {
+  margin-top: 28px;
+}
+
+/* Section headings */
+
+.project-detail-section {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.project-section-heading {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.project-section-heading > p:not(.eyebrow) {
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+.project-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.project-overview-grid h3,
+.architecture-card h3,
+.feature-card h3,
+.technical-list h3 {
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.project-overview-grid p,
+.architecture-card p,
+.feature-card p,
+.technical-list p {
+  color: var(--color-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Screenshot showcase */
+
+.project-showcase-section {
+  padding: 76px 0;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-screenshot-frame {
+  margin: 0;
+  padding: 12px;
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg, 14px);
+  box-shadow: var(--shadow-card, 0 12px 36px rgba(23, 32, 51, 0.06));
+}
+
+.project-screenshot-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.project-screenshot-frame figcaption {
+  padding: 12px 8px 4px;
+  color: var(--color-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* System architecture */
+
+.architecture-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 16px;
+}
+
+.architecture-card {
+  padding: 24px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+}
+
+.architecture-number,
+.feature-number {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.architecture-card p {
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.architecture-role {
+  display: block;
+  font-size: 10px;
+}
+
+.architecture-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 24px;
+}
+
+.architecture-note {
+  margin-top: 18px;
+  color: var(--color-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Feature cards */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.feature-card {
+  padding: 28px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card, 0 12px 36px rgba(23, 32, 51, 0.06));
+}
+
+.feature-number {
+  margin-bottom: 16px;
+}
+
+/* Technical contributions */
+
+.technical-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.technical-list article {
+  padding: 26px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.technical-list h3 {
+  margin-bottom: 8px;
+}
+
+.technical-list p {
+  max-width: 760px;
+  margin-bottom: 0;
+}
+
+/* Closing section */
+
+.project-contribution-section {
+  padding: 76px 0;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.contribution-description {
+  max-width: 760px;
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+.project-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.project-detail-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm, 8px);
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.project-detail-actions .btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.project-detail-actions .btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.project-detail-actions .btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.project-detail-actions .btn-secondary:hover {
+  background: var(--color-bg);
+}
+
+.project-disclaimer {
+  max-width: 760px;
+  margin-top: 36px;
+  color: var(--color-muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Responsive layout */
+
+@media (max-width: 800px) {
+  .project-detail-hero {
+    padding: 42px 0 52px;
+  }
+
+  .back-link {
+    margin-bottom: 32px;
+  }
+
+  .project-detail-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .project-meta {
+    gap: 24px 36px;
+  }
+
+  .project-overview-grid {
+    gap: 28px;
+  }
+
+  .architecture-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-connector {
+    transform: rotate(90deg);
+    min-height: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-overview-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-section,
+  .project-showcase-section,
+  .project-contribution-section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .project-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 16px;
+  }
+
+  .architecture-card,
+  .feature-card {
+    padding: 22px;
+  }
+
+  .project-detail-actions {
+    flex-direction: column;
+  }
+
+  .project-detail-actions a {
+    width: 100%;
+  }
+}
+
+
+/* ========================================
+   Illegal U-turn Detector Workflow
+======================================== */
+
+.uturn-workflow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+.uturn-workflow .architecture-card {
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+.uturn-workflow .architecture-card h3 {
+  overflow-wrap: anywhere;
+}
+
+.uturn-workflow .architecture-card p {
+  margin-bottom: 24px;
+  overflow-wrap: anywhere;
+}
+
+.uturn-workflow .architecture-tech {
+  display: block;
+  margin-top: auto;
+  color: var(--color-muted);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 800px) {
+  .uturn-workflow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .uturn-workflow {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

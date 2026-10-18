@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="An academic project exploring illegal U-turn detection and license plate recognition using Python, OpenCV, and Tesseract OCR."
+  >
+  <title>Illegal U-turn Detector | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-details.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Portfolio.</a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-detail-hero container">
+      <a href="index.html#projects" class="back-link">
+        &larr; Back to projects
+      </a>
+
+      <p class="eyebrow">PROJECT 02 / COMPUTER VISION</p>
+
+      <h1>Illegal U-turn Detector</h1>
+
+      <p class="project-detail-intro">
+        An academic prototype exploring how sensor-triggered image capture
+        and computer vision could help identify vehicles involved in
+        illegal U-turns through license plate recognition.
+      </p>
+
+      <div class="project-meta">
+        <div>
+          <span class="project-meta-label">Project type</span>
+          <strong>Academic group project</strong>
+        </div>
+
+        <div>
+          <span class="project-meta-label">My role</span>
+          <strong>Python &amp; OCR development</strong>
+        </div>
+
+        <div>
+          <span class="project-meta-label">Focus</span>
+          <strong>Image processing</strong>
+        </div>
+      </div>
+
+      <div class="tag-list">
+        <span>Python</span>
+        <span>OpenCV</span>
+        <span>Tesseract OCR</span>
+        <span>Raspberry Pi</span>
+        <span>MariaDB</span>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section container">
+      <p class="eyebrow">01 / OVERVIEW</p>
+      <h2 class="section-title">Turning captured images into useful data.</h2>
+
+      <div class="project-overview-grid">
+        <div>
+          <h3>The challenge</h3>
+          <p>
+            Detecting a potential traffic violation is only part of the
+            problem. A useful monitoring prototype also needs to capture
+            visual evidence and attempt to identify the vehicle involved.
+          </p>
+          <p>
+            This project explored a sensor-assisted approach to detecting
+            illegal U-turns and processing vehicle images for license plate
+            text extraction.
+          </p>
+        </div>
+
+        <div>
+          <h3>The approach</h3>
+          <p>
+            The prototype combined Raspberry Pi hardware and camera-based
+            image capture with Python image processing. OpenCV was used to
+            prepare images and locate potential license plate regions, while
+            Tesseract OCR was used to attempt to extract text.
+          </p>
+          <p>
+            Captured evidence and related records were also handled through
+            a MariaDB database.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Workflow -->
+    <section class="section container project-showcase-section">
+      <p class="eyebrow">02 / TECHNICAL WORKFLOW</p>
+      <h2 class="section-title">From vehicle detection to text recognition.</h2>
+
+      <p class="section-description">
+        A conceptual overview of the main technical stages explored in
+        the prototype.
+      </p>
+
+      <div class="architecture-flow uturn-workflow">
+        <article class="architecture-card">
+          <span class="architecture-number">01</span>
+          <h3>Sensor input</h3>
+          <p>
+            Ultrasonic sensors connected to a Raspberry Pi provide input
+            for the vehicle-monitoring setup.
+          </p>
+          <span class="architecture-tech">Raspberry Pi · GPIO</span>
+        </article>
+
+        <article class="architecture-card">
+          <span class="architecture-number">02</span>
+          <h3>Image capture</h3>
+          <p>
+            The camera captures vehicle images, which can be saved and
+            associated with timestamps and system records.
+          </p>
+          <span class="architecture-tech">PiCamera · Python</span>
+        </article>
+
+        <article class="architecture-card">
+          <span class="architecture-number">03</span>
+          <h3>Plate localisation</h3>
+          <p>
+            Image processing converts frames to grayscale, reduces noise,
+            detects edges, and examines contours for a potential plate region.
+          </p>
+          <span class="architecture-tech">OpenCV · NumPy</span>
+        </article>
+
+        <article class="architecture-card">
+          <span class="architecture-number">04</span>
+          <h3>Text extraction</h3>
+          <p>
+            The selected image region is passed to Tesseract OCR to attempt
+            to extract the characters from the license plate.
+          </p>
+          <span class="architecture-tech">Tesseract · pytesseract</span>
+        </article>
+
+        <article class="architecture-card">
+          <span class="architecture-number">05</span>
+          <h3>Record storage</h3>
+          <p>
+            The prototype also used MariaDB to store captured image data
+            and related records for later reference.
+          </p>
+          <span class="architecture-tech">MariaDB · SQL</span>
+        </article>
+      </div>
+
+      <p class="project-note">
+        This diagram summarises the project's main technical components.
+        It should not be interpreted as a verified, fully automated
+        end-to-end deployment pipeline.
+      </p>
+    </section>
+
+    <!-- My Contribution -->
+    <section class="section container">
+      <p class="eyebrow">03 / MY CONTRIBUTION</p>
+      <h2 class="section-title">Focused on Python and license plate recognition.</h2>
+
+      <div class="project-overview-grid">
+        <div>
+          <h3>My responsibilities</h3>
+          <p>
+            I worked with one teammate on the Python-based license plate
+            detection and OCR code. The other half of the group focused
+            on developing the website component.
+          </p>
+          <p>
+            My technical work centred on processing captured images,
+            identifying potential plate regions, and attempting to
+            extract readable text.
+          </p>
+        </div>
+
+        <div>
+          <h3>Image-processing pipeline</h3>
+          <ul class="technical-list">
+            <li>Converted captured frames to grayscale.</li>
+            <li>Applied bilateral filtering to reduce noise while preserving edges.</li>
+            <li>Used Canny edge detection to identify prominent boundaries.</li>
+            <li>Examined contours and polygon approximations to find potential plate regions.</li>
+            <li>Passed the cropped region to Tesseract OCR for text extraction.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Challenges -->
+    <section class="section container">
+      <p class="eyebrow">04 / TECHNICAL CONSIDERATIONS</p>
+      <h2 class="section-title">Working with real-world image limitations.</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Finding the plate</h3>
+          <p>
+            Contour-based detection relies on visible edges and suitable
+            image conditions. Plate angle, background detail, lighting,
+            and image quality can affect the result.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Recognising characters</h3>
+          <p>
+            OCR quality depends on the clarity of the cropped plate,
+            character spacing, image resolution, and the contrast
+            between text and background.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Prototype limitations</h3>
+          <p>
+            The approach was a classical image-processing pipeline,
+            not a trained machine-learning detector. More robust
+            localisation, image preprocessing, and accuracy evaluation
+            would be useful areas for further development.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="section container">
+      <p class="eyebrow">05 / TECHNOLOGIES</p>
+      <h2 class="section-title">Tools and technologies.</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Python</h3>
+          <p>
+            Core programming language for image processing,
+            camera interaction, and prototype logic.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>OpenCV &amp; NumPy</h3>
+          <p>
+            Image manipulation, filtering, edge detection,
+            contour analysis, and image-region processing.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Tesseract OCR</h3>
+          <p>
+            Optical character recognition used to attempt
+            to read text from candidate license plate regions.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Raspberry Pi &amp; PiCamera</h3>
+          <p>
+            Hardware platform for sensor input and image capture
+            in the prototype setup.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>MariaDB</h3>
+          <p>
+            Relational database used to store captured image data
+            and associated system records.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Hardware integration</h3>
+          <p>
+            Combined sensor input, camera capture, image processing,
+            and data storage across the project's components.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    
+    <!-- Project Takeaway -->
+    <section class="section project-contribution-section">
+    <div class="container">
+        <p class="eyebrow">06 / TAKEAWAY</p>
+
+        <h2 class="section-title">
+         Applying computer vision beyond the screen.
+        </h2>
+
+        <p class="contribution-description">
+         This project gave me practical experience with Python image
+        processing, contour-based region detection, OCR integration,
+        and hardware-connected application logic. It also helped me
+        understand the challenges involved in turning captured images
+        into structured information.
+        </p>
+
+        <div class="project-detail-actions">
+         <a class="btn btn-primary" href="index.html#projects">
+         Back to all projects
+        </a>
+
+        <a class="btn btn-secondary" href="index.html#contact">
+          Get in touch
+        </a>
+        </div>
+
+        <p class="project-disclaimer">
+        Academic group project. My contribution focused on the Python
+        license plate detection and OCR code, while other team members
+        worked on the website component.
+        </p>
+    </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Portfolio. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

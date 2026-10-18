@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="TrainOS AI, a fitness superapp prototype combining mobile development, nutrition tracking, a Flask backend, and machine-learning-based workout recommendations."
+  >
+
+  <title>TrainOS AI | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-details.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Portfolio.</a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-detail-hero">
+      <div class="container">
+
+        <a class="back-link" href="index.html#projects">
+          &larr; Back to projects
+        </a>
+
+        <p class="eyebrow">PROJECT 03 / MOBILE &amp; MACHINE LEARNING</p>
+
+        <h1>TrainOS AI — Fitness Superapp</h1>
+
+        <p class="project-detail-intro">
+          A fitness application concept combining workout
+          recommendations, nutrition tracking, and machine learning
+          to explore a more personalised approach to fitness.
+        </p>
+
+        <div class="project-meta">
+          <div>
+            <span>PROJECT TYPE</span>
+            <strong>Academic project</strong>
+          </div>
+
+          <div>
+            <span>PLATFORM</span>
+            <strong>Mobile application</strong>
+          </div>
+
+          <div>
+            <span>FOCUS</span>
+            <strong>Full-stack &amp; ML integration</strong>
+          </div>
+        </div>
+
+        <ul class="tag-list project-detail-tags">
+          <li>React Native</li>
+          <li>Expo</li>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>TensorFlow / Keras</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section container project-detail-section">
+
+      <div class="project-section-heading">
+        <p class="eyebrow">01 / OVERVIEW</p>
+        <h2 class="section-title">
+          Bringing fitness tracking and recommendations together.
+        </h2>
+      </div>
+
+      <div class="project-overview-grid">
+
+        <div>
+          <h3>The concept</h3>
+          <p>
+            TrainOS AI was designed around the idea of bringing
+            fitness-related features into one mobile application.
+            The concept combined workout recommendations with
+            nutrition tracking to explore how users could manage
+            different aspects of their fitness journey in one place.
+          </p>
+        </div>
+
+        <div>
+          <h3>The implementation</h3>
+          <p>
+            The application used React Native and Expo for the
+            mobile experience, with a Flask backend supporting
+            application functionality. A TensorFlow/Keras model
+            explored classifying fitness recommendations based on
+            inputs such as calorie intake and workout type.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Application Features -->
+    <section class="section project-showcase-section">
+      <div class="container">
+
+        <div class="project-section-heading">
+          <p class="eyebrow">02 / APPLICATION FEATURES</p>
+          <h2 class="section-title">
+            More than a workout tracker.
+          </h2>
+          <p>
+            The project explored several features intended to
+            support a more connected fitness experience.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+            <h3>Workout recommendations</h3>
+            <p>
+              Explored using workout information and calorie intake
+              as inputs for a machine-learning model intended to
+              classify recommendations into Strength, Endurance,
+              or Flexible categories.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+            <h3>Nutrition tracking</h3>
+            <p>
+              Included CRUD functionality for nutrition records,
+              allowing users to create, view, update, and manage
+              their tracked information.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+            <h3>Mobile-first experience</h3>
+            <p>
+              Used React Native and Expo to develop the application
+              interface with a cross-platform mobile development
+              approach.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">04</span>
+            <h3>Gym finder concept</h3>
+            <p>
+              A gym discovery feature was considered as part of the
+              broader superapp concept, but remained unfinished
+              during development.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="section container project-detail-section">
+
+      <div class="project-section-heading">
+        <p class="eyebrow">03 / SYSTEM ARCHITECTURE</p>
+        <h2 class="section-title">
+          Connecting mobile, backend, and machine learning.
+        </h2>
+        <p>
+          The project explored a multi-component architecture
+          separating the mobile interface, application backend,
+          and model-based recommendation logic.
+        </p>
+      </div>
+
+      <div class="architecture-flow">
+
+        <article class="architecture-card">
+          <span class="architecture-number">01</span>
+          <h3>Mobile application</h3>
+          <p>
+            Provides the user-facing fitness experience, including
+            nutrition tracking and access to application features.
+          </p>
+          <span class="architecture-role">
+            REACT NATIVE · EXPO
+          </span>
+        </article>
+
+        <div class="architecture-connector" aria-hidden="true">
+          &rarr;
+        </div>
+
+        <article class="architecture-card">
+          <span class="architecture-number">02</span>
+          <h3>Backend API</h3>
+          <p>
+            Provides a backend layer for application requests
+            and communication between the mobile app and
+            supporting functionality.
+          </p>
+          <span class="architecture-role">
+            PYTHON · FLASK
+          </span>
+        </article>
+
+        <div class="architecture-connector" aria-hidden="true">
+          &rarr;
+        </div>
+
+        <article class="architecture-card">
+          <span class="architecture-number">03</span>
+          <h3>ML model</h3>
+          <p>
+            Explores classifying workout recommendations using
+            fitness-related inputs through a TensorFlow/Keras
+            model.
+          </p>
+          <span class="architecture-role">
+            TENSORFLOW · KERAS
+          </span>
+        </article>
+
+      </div>
+
+      <p class="architecture-note">
+        Conceptual overview of the project's main components,
+        not a complete deployment diagram.
+      </p>
+
+    </section>
+
+    <!-- Machine Learning -->
+    <section class="section project-showcase-section">
+      <div class="container">
+
+        <div class="project-section-heading">
+          <p class="eyebrow">04 / MACHINE LEARNING</p>
+          <h2 class="section-title">
+            Exploring personalised workout classification.
+          </h2>
+          <p>
+            The machine-learning component explored whether
+            fitness-related inputs could be used to classify
+            workout recommendations into different categories.
+          </p>
+        </div>
+
+        <div class="project-overview-grid">
+
+          <div>
+            <h3>Model approach</h3>
+            <p>
+              A TensorFlow/Keras model was developed to explore
+              three output categories: Strength, Endurance,
+              and Flexible. Calorie intake and workout type
+              were among the intended input features.
+            </p>
+            <p>
+              The model was part of an exploratory prototype,
+              rather than a validated system for determining
+              an individual's optimal workout.
+            </p>
+          </div>
+
+          <div>
+            <h3>Evaluation and limitations</h3>
+            <p>
+              The model achieved approximately 34% accuracy
+              during development. This indicated that its
+              predictions were not yet reliable enough to
+              support confident fitness recommendations.
+            </p>
+            <p>
+              The limited dataset, including synthetic data,
+              was an important constraint. Further work would
+              require better representative data, model
+              evaluation, and iterative experimentation.
+            </p>
+          </div>
+
+        </div>
+
+        <p class="architecture-note">
+          Reported accuracy is an approximate development result,
+          not a benchmark of a production-ready model.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Technical Work -->
+    <section class="section container project-detail-section">
+
+      <div class="project-section-heading">
+        <p class="eyebrow">05 / TECHNICAL IMPLEMENTATION</p>
+        <h2 class="section-title">
+          Building across the application stack.
+        </h2>
+      </div>
+
+      <div class="technical-list">
+
+        <article>
+          <h3>Mobile application development</h3>
+          <p>
+            Worked with React Native and Expo to build the mobile
+            application experience and bring its fitness-related
+            functionality together.
+          </p>
+        </article>
+
+        <article>
+          <h3>Backend integration</h3>
+          <p>
+            Used a Python Flask backend as part of the application
+            architecture, separating backend functionality from
+            the mobile user interface.
+          </p>
+        </article>
+
+        <article>
+          <h3>Machine-learning experimentation</h3>
+          <p>
+            Explored a TensorFlow/Keras classification model for
+            workout categories and encountered the practical
+            challenges of working with limited training data
+            and evaluating model performance.
+          </p>
+        </article>
+
+        <article>
+          <h3>Nutrition data management</h3>
+          <p>
+            Implemented CRUD functionality for nutrition tracking,
+            providing experience with the data-management
+            requirements of a mobile application.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Technologies -->
+    <section class="section project-showcase-section">
+      <div class="container">
+
+        <div class="project-section-heading">
+          <p class="eyebrow">06 / TECHNOLOGIES</p>
+          <h2 class="section-title">
+            Tools used in the project.
+          </h2>
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <h3>React Native &amp; Expo</h3>
+            <p>
+              Mobile application development and interface
+              implementation.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Python &amp; Flask</h3>
+            <p>
+              Backend application logic and API development.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>TensorFlow &amp; Keras</h3>
+            <p>
+              Model development and experimentation with
+              workout-category classification.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Nutrition CRUD</h3>
+            <p>
+              Create, read, update, and delete operations for
+              nutrition-tracking functionality.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Takeaway -->
+    <section class="section project-contribution-section">
+      <div class="container">
+
+        <p class="eyebrow">07 / TAKEAWAY</p>
+
+        <h2 class="section-title">
+          Exploring the intersection of mobile development and AI.
+        </h2>
+
+        <p class="contribution-description">
+          TrainOS AI gave me experience with mobile application
+          development, backend integration, nutrition data
+          management, and machine-learning experimentation.
+          It also highlighted the importance of representative
+          datasets, honest model evaluation, and distinguishing
+          an early prototype from a reliable end-user product.
+        </p>
+
+        <div class="project-detail-actions">
+          <a
+            class="btn btn-primary"
+            href="https://github.com/frontiermarch/TrainOS_ML"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View ML Repository &nearr;
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/frontiermarch/TrainOS_ML_backend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Backend Repository &nearr;
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="index.html#projects"
+          >
+            Back to all projects
+          </a>
+        </div>
+
+        <p class="project-disclaimer">
+          Academic project prototype. The gym finder remained
+          unfinished, and the ML model's development accuracy
+          should not be interpreted as validated recommendation
+          performance.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Portfolio. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
